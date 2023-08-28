@@ -1,0 +1,4 @@
+resources:
+  - mariadb.yaml
+  - backend.yaml
+  - frontend.yaml
