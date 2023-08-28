@@ -4,8 +4,8 @@ metadata:
     name: url-config
 data:
     .env: |
-        PUBLIC_URL=/k365339e4c138a
-        REACT_APP_PATH=/k365339e4c138a
+        PUBLIC_URL=/kf6de092c2f59a
+        REACT_APP_PATH=/kf6de092c2f59a
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -59,8 +59,7 @@ metadata:
 spec:
     ports:
         - name: http
-          port: 80
-          targetPort: 3000
+          port: 8000
     selector:
         app: frontend
     type: LoadBalancer
@@ -83,4 +82,4 @@ spec:
                   - backend:
                         serviceName: frontend-service
                         servicePort: 80
-                    path: /k365339e4c138a(/|$)(.*)
+                    path: /kf6de092c2f59a(/|$)(.*)
