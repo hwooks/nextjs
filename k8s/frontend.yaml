@@ -37,7 +37,7 @@ spec:
                   image: krmp-d2hub-idock.9rum.cc/dev-test/repo_58908fa0dc2d
                   imagePullPolicy: Always
                   ports:
-                      - containerPort: 80
+                      - containerPort: 3000
                   volumeMounts:
                       - name: config-volume
                         mountPath: /usr/src/app/.env
@@ -60,7 +60,7 @@ spec:
     ports:
         - name: http
           port: 80
-          targetPort: 80
+          targetPort: 3000
     selector:
         app: frontend
     type: LoadBalancer
